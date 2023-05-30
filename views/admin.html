@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
+</head>
+<body>
+  <h1>Welcome, Admin!</h1>
+  <button id="logoutButton">Logout</button>
+
+  <h2>Update Name</h2>
+  <form id="updateNameForm">
+    <input type="text" name="name" placeholder="New Name" required>
+    <button type="submit">Update Name</button>
+  </form>
+
+  <h2>Update Password</h2>
+  <form id="updatePasswordForm">
+    <input type="password" name="currentPassword" placeholder="Current Password" required>
+    <input type="password" name="newPassword" placeholder="New Password" required>
+    <input type="password" name="confirmNewPassword" placeholder="Confirm New Password" required>
+    <button type="submit">Update Password</button>
+  </form>
+
+  <h2>Add Product</h2>
+  <form id="addProductForm">
+    <input type="text" name="productName" placeholder="Product Name" required>
+    <input type="number" name="productPrice" placeholder="Product Price" required>
+    <button type="submit">Add Product</button>
+  </form>
+
+  <h2>Product Menu</h2>
+  <ul id="productList">
+    <!-- Dynamically populated with product items -->
+  </ul>
+
+  <h2>Delete Product</h2>
+  <form id="deleteProductForm">
+    <input type="text" name="productId" placeholder="Product ID" required>
+    <button type="submit">Delete Product</button>
+  </form>
+
+  <script src="/public/js/admin.js"></script>
+</body>
+</html>
